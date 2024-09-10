@@ -1,6 +1,4 @@
 export const config = {
-    // runner: 'local',
-    // port: 4723,
     user: 'oauth-analuisaaugustob-7ca2a',
     key: '68fc44c9-7450-4d3b-a445-ac6cc9f561e1',
     hostname: 'ondemand.us-west-1.saucelabs.com',
@@ -23,13 +21,6 @@ export const config = {
             deviceOrientation: 'PORTRAIT',
             appiumVersion: '2.11.0',
         }
-    //     platformName: 'Android',
-    //     'appium:deviceName': 'ebac',
-    //     'appium:platformVersion': '9.0',
-    //     'appium:automationName': 'UiAutomator2',
-    //     'appium:app': `${process.cwd()}/app/ebacshop.apks`,
-    //     'appium:appWaitActivity': '.MainActivity',
-    //     'appium:DisableIdLocatorAutocompletion': true
     }],
     logLevel: 'info',
     bail: 0,
