@@ -5,15 +5,15 @@ export const config = {
         './test/specs/**/*.js'
     ],
     maxInstances: 1,
-    capabilities: [{
-        platformName: 'Android',
-        'appium:deviceName': 'ebac',
-        'appium:platformVersion': '9.0',
-        'appium:automationName': 'UiAutomator2',
-        'appium:app': `${process.cwd()}/app/ebacshop.apks`,
-        'appium:appWaitActivity': '.MainActivity',
-        'appium:DisableIdLocatorAutocompletion': true
-    }],
+    // capabilities: [{
+    //     platformName: 'Android',
+    //     'appium:deviceName': 'ebac',
+    //     'appium:platformVersion': '9.0',
+    //     'appium:automationName': 'UiAutomator2',
+    //     'appium:app': `${process.cwd()}/app/ebacshop.apks`,
+    //     'appium:appWaitActivity': '.MainActivity',
+    //     'appium:DisableIdLocatorAutocompletion': true
+    // }],
     logLevel: 'info',
     bail: 0,
     waitforTimeout: 10000,
