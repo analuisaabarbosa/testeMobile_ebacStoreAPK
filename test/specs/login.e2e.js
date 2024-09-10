@@ -1,4 +1,4 @@
-import { expect, driver } from '@wdio/globals'
+import { expect } from '@wdio/globals'
 import homePage from '../pageobjects/home.page'
 import loginPage from '../pageobjects/login.page'
 import profilePage from '../pageobjects/profile.page'
