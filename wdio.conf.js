@@ -1,9 +1,11 @@
+import 'dotenv/config'
+
 export const config = {
-    user: 'oauth-analuisaaugustob-7ca2a',
-    key: '68fc44c9-7450-4d3b-a445-ac6cc9f561e1',
-    hostname: 'ondemand.us-west-1.saucelabs.com',
-    port: 443,
-    baseUrl: 'wd/hub',
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
+    hostname: process.env.SAUCE_HOSTNAME,
+    port: Number(process.env.SAUCE_PORT),
+    baseUrl: process.env.SAUCE_PATH,
     specs: [
         './test/specs/**/*.js'
     ],
