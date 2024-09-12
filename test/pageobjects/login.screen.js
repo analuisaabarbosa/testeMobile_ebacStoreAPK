@@ -1,6 +1,6 @@
 import { $ } from '@wdio/globals'
 
-class LoginPage {
+class LoginScreen {
     
     get email() {
         return $('id:email')
@@ -21,4 +21,4 @@ class LoginPage {
     }
 }
 
-export default new LoginPage();
+export default new LoginScreen();
