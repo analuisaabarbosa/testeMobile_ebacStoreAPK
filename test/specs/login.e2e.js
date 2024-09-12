@@ -1,14 +1,15 @@
-import { expect } from '@wdio/globals'
-import homePage from '../pageobjects/home.page'
-import loginPage from '../pageobjects/login.page'
-import profilePage from '../pageobjects/profile.page'
+import { expect } from '@wdio/globals';
+import homeScreen from '../pageobjects/home.screen';
+import loginScreen from '../pageobjects/login.screen';
+import profileScreen from '../pageobjects/profile.screen';
+import 'dotenv/config';
 
-describe('My Login application', () => {
+describe('Login', () => {
     it('should login with valid credentials', async () => {
-        await homePage.openMenu('profile')
-        await loginPage.login('ana@luisa.barbosa.com.br', 'anaLuisa97!')
-        await homePage.openMenu('profile')
-        expect((await profilePage.profileName('Barbosa Ana Luisa')).isDisplayed()).toBeTruthy()     
+        await homeScreen.openMenu('profile')
+        await loginScreen.login(process.env.EMAIL, process.env.PASSWORD)
+        await homeScreen.openMenu('profile')
+        expect((await profileScreen.profileName(process.env.USERNAME)).isDisplayed()).toBeTruthy()     
     })
 })
 
