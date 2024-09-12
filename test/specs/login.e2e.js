@@ -1,7 +1,7 @@
 import { expect } from '@wdio/globals'
-import homeScreen from '../pageobjects/home.screen'
-import loginScreen from '../pageobjects/login.screen'
-import profileScreen from '../pageobjects/profile.screen'
+import homeScreen from '../screenobjects/home.screen'
+import loginScreen from '../screenobjects/login.screen'
+import profileScreen from '../screenobjects/profile.screen'
 import 'dotenv/config'
 
 describe('Login', () => {
