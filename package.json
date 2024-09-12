@@ -13,6 +13,7 @@
     "test": "wdio run ./wdio.conf.js"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "test-mobile-ebacstore": "file:",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
