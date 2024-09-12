@@ -5,7 +5,7 @@ export const config = {
     key: process.env.SAUCE_ACCESS_KEY,
     hostname: process.env.SAUCE_HOSTNAME,
     port: Number(process.env.SAUCE_PORT),
-    baseUrl: process.env.SAUCE_PATH,
+    path: process.env.SAUCE_PATH,
     specs: [
         './test/specs/**/*.js'
     ],

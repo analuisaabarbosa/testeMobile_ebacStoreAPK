@@ -1,9 +1,9 @@
 import { $ } from '@wdio/globals'
 
-class ProfilePage {
+class ProfileScreen {
     async profileName(name) {
         return $(`//android.widget.TextView[@text="${name}"]`)
     }
 }
 
-export default new ProfilePage();
+export default new ProfileScreen();

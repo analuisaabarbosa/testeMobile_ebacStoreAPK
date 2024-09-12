@@ -1,9 +1,9 @@
 import { $ } from '@wdio/globals'
 
-class HomePage {
+class HomeScreen {
     async openMenu(menu) {
         await $(`id:tab-${menu}`).click()
     }
 }
 
-export default new HomePage();
+export default new HomeScreen();
