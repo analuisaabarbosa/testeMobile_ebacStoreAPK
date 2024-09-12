@@ -13,8 +13,8 @@ export const config = {
     capabilities: [{
         platformName: 'Android',
         'appium:app': 'storage:filename=ebacshop.aab',
-        'appium:deviceName': 'Android GoogleAPI Emulator',
-        'appium:platformVersion': '10',
+        'appium:deviceName': 'Google Pixel 8 Pro GoogleAPI Emulator',
+        'appium:platformVersion': '15.0',
         "appium:disableIdLocatorAutocompletion": true,
         'appium:automationName': 'UiAutomator2',
         'sauce:options': {
