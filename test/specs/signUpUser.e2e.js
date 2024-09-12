@@ -1,5 +1,5 @@
-import homeScreen from "../pageobjects/home.screen";
-import signupScreen from "../pageobjects/signup.screen";
+import homeScreen from "../screenobjects/home.screen";
+import signupScreen from "../screenobjects/signup.screen";
 import 'dotenv';
 
 describe('Sign up user', () => {
@@ -8,6 +8,6 @@ describe('Sign up user', () => {
         await homeScreen.openMenu('profile')
         await signupScreen.signUpUser()
         await homeScreen.validateSearchText()
-        
+
     });
 });
