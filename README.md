@@ -1,5 +1,4 @@
 # Projeto de Automação de Testes Mobile para Aplicativo E-commerce
-
 Este projeto foi desenvolvido para realizar automação de testes no aplicativo e-commerce da Ebac, utilizando WebdriverIO, Appium, Appium Inspector e Android Studio. O objetivo principal é validar as funcionalidades Login e Cadastro de Usuários, garantindo a integridade de seu funcionamento no sistema operacional Android.
 
 ## Ferramentas Utilizadas
