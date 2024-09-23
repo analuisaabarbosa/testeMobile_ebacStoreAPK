@@ -1,4 +1,5 @@
 export const config = {
+    
     runner: 'local',
     port: 4723,
     specs: [
@@ -32,4 +33,5 @@ export const config = {
     afterTest: async function(test, context, { error, result, duration, passed, retries }) {
         await driver.takeScreenshot();
     }   
+
 }
